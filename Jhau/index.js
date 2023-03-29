@@ -108,24 +108,6 @@ window.onscroll = function(){
     var progressHeight = (window.pageYOffset / totalHeight) * 100;
     progressbar.style.height = progressHeight + "%";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(window).on('scroll',function(){
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     if($(window).scrollTop() >= 3.75*vh){

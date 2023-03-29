@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Abhishek</title>
+    <link rel="stylesheet" href="Form.css">
+    <link rel="icon" href="icon-black.png">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form action="Form2.html">
+
+      <div class="box">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="id-name" onkeyup="validatename()">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="box">
+        <label>Phone No</label>
+        <input type="tel" placeholder="98 0000 0000" id="id-phone" onkeyup="validatephone()">
+        <span id="phone-error"></span>
+      </div>
+
+      <div class="box">
+        <label>E-mail Id</label>
+        <input type="email" placeholder="Enter Email" id="id-email" onkeyup="validateemail()">
+        <span id="email-error"></span>
+      </div>   
+
+      <div class="box">
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Enter your message" id="id-message" onkeyup="validatemessage()"></textarea>
+        <span id="message-error"></span>
+      </div>
+
+      <abbr title="Try to Check Your Information Before You Submit">
+        <input type="submit" value="Submit" class="submit" onclick="return validateform()">
+      </abbr>
+        <span id="submit-error"></span>
+      </form>
+
+      <div class="profile">
+        <abbr title="Click here to connect to facebook">
+          <a href="https://www.facebook.com/profile.php?id=100063712182245">
+            <img src="Abhishek.jpg" class="img" alt="Photo">
+          </a>
+        </abbr>
+      </div>
+  </div>
+  <script type="text/javascript" src="Form.js"></script>
+</body>
+</html>

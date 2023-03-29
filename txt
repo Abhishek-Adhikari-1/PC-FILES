@@ -1,0 +1,15 @@
+<h2>Academics</h2><br><br>
+         <p>CCRC offers grade 11 and 12 courses in science, humanities and mana>
+         <h2>Motto</h2><br><br>
+         <p>Our school's motto is Quest for knowledge with wisdom.</p>
+         <div id="our_programs">
+         <h2>Our Programs</h2><br>
+         <b>Science – NEB (+2)</b><br><br>
+         <p>Plus two in Science offers an integrated curriculum in English, Nep>
+
+         In Science Stream, the students are divided into two groups: Physical >
+        <b>Management – NEB (+2)</b><br><br>
+        <p>Plus two in management course is designed to develop a strong founda>
+        <b>Humanities – NEB (+2)</b><br><br>
+        <p>Plus two in Humanities offers strong foundation level courses in var>
+        <b>Law – NEB (+2)</b><br><br>

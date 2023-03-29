@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Quantico&display=swap');
+
+:root{
+    --color-picker: 10;
+    --bg-color: hsl(var(--color-picker), 0%, 100%);
+    --first-color: hsl(var(--color-picker), 69%, 61%);
+    --first-color-alt: hsl(var(--color-picker), 57%, 53%);
+    --first-color-light: hsl(var(--color-picker), 100%, 78%);
+    --input-focus-color: hsl(var(--color-picker), 55%, 63%);
+    --color-hover: hsl(var(--color-picker), 100%, 15%);
+    --text-color: hsl(var(--color-picker), 10%, 65%);
+}
+body{
+    font-family: 'News Cycle', sans-serif;
+    background: hsl(var(--color-picker), 35%, 62%);
+}
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 25%;
+    max-width: 500px;
+    padding: 30px 35px;
+    background: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    -webkit-user-select: none;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 10px 0px;
+    padding: 5px;
+}
+#butt{
+    min-width: 100%;
+    padding: 7px 15px;
+    display: flex;
+    justify-content: center;
+    max-width: 80px;
+    background-color: var(--first-color);
+    border-color: var(--first-color);
+    border-radius: 5px;
+    color: var(--bg-color);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .5s;
+}
+#butt:hover{
+    color: var(--color-hover);
+    background-color: var(--first-color-light);
+    box-shadow: 0px 0px 10px var(--first-color-alt);
+}
+input:focus{
+    border-bottom-color: var(--input-focus-color);
+}
+header{
+    text-align: center;
+    color: var(--first-color-alt);
+    font-weight: 900;
+    font-size: 20px;
+}
+a{
+    color: var(--first-color-alt);
+    text-decoration: none;
+    font-weight: 600;
+}
+a:hover{
+    text-decoration: underline;
+}
+.underline{
+    width: 70px;
+}
+@media (min-width:500px) and (max-width:1000px){
+    .form{
+        width: 45%;
+
+    }
+}
+@media (max-width:500px){
+    .form{
+        width: 55%;
+    }
+}
+#nameError, #phoneError, #emailError, #passError, #conpassError{
+    color: red;
+    font-size: 13px;
+    text-align: right;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+}
+#icon1, #icon2{
+    cursor: pointer;
+    max-width: 20px;
+    align-self: flex-end;
+    translate: 0 -12px;
+    margin: -20px 0 0 0;
+}
+label{
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 2px;
+}
+/*Forget Password*/
+.underlin{
+    width: 170px;
+}

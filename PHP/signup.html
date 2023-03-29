@@ -1,0 +1,73 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Signup Page</title>
+        <link rel="stylesheet" type="text/css" href="signup.css" />
+        <link rel="icon" href="icon-black.png" />
+    </head>
+    <body>
+        <div class="card">
+            <form class="form" id="form" action="signup.php" method="POST">
+                <header>Signup Here!</header>
+                <hr class="underline" />
+                <div class="fields">
+                    <div id="nameError"></div>
+                    <input
+                        type="text"
+                        placeholder="Enter your name"
+                        id="name"
+                        name="name"
+                    />
+                    <div id="phoneError"></div>
+                    <input
+                        type="tel"
+                        placeholder="Enter your contact number"
+                        id="phone"
+                        name="phone"
+                    />
+                    <div id="emailError"></div>
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        id="email"
+                        name="email"
+                    />
+                    <div id="passError"></div>
+                    <input
+                        type="password"
+                        placeholder="Enter your password"
+                        id="pass"
+                        name="pass"
+                    />
+                    <img
+                        src="eyeclose.png"
+                        id="icon1"
+                        alt="show psw"
+                        title="Click to show password"
+                    />
+                    <div id="conpassError"></div>
+                    <input
+                        type="password"
+                        placeholder="Confirm your password"
+                        id="conpass"
+                    />
+                    <img
+                        src="eyeclose.png"
+                        id="icon2"
+                        alt="show psw"
+                        title="Click to show password"
+                    />
+                    <button type="submit" id="butt">Sign Up</button>
+                </div>
+                <hr />
+                <label>
+                    <input type="checkbox" id="terms" onclick="isChecked()" required />
+                    <samp id="samp">By checking, you agree to our <b class="un">Terms of Service</b> and <b class="un">Privacy Policy</b>.</samp id="samp">
+                </label>
+            </form>
+        </div>
+        <script type="text/javascript" src="signup.js"></script>
+    </body>
+</html>
