@@ -1,0 +1,117 @@
+<html>
+<head>
+<title> form </title>
+<style>
+    img {
+        height: 160px;
+        width: 130px;
+    }
+    fieldset {
+        height: 180px;
+        width: 450px;
+    }
+    .abcxyz {
+        color: rgb(116, 0, 0);
+        border-radius: 5px;
+    }
+    /* p {
+        color: rgb(47, 0, 255);
+    } */
+    h1 {
+        color: rgb(101, 226, 43);
+    }
+    section {
+        max-width: 475px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    label {
+        width: 17%;
+        padding: 5px;
+        display: inline-block;
+    }
+    .lab {
+        width: 100%;
+        padding: 0px;
+        display: inline-block;
+    }
+    .la {
+        width: 15%;
+        padding: 20px;
+        display: inline-flex;
+    }
+    hr {
+        width: 478px;
+    }
+    /* input {
+        width: 100%;
+        padding: 5px;
+        margin-top: 20px;
+        font-size: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: none;
+    } */
+    input[type=submit] {
+        width: 100%;
+        padding: 5px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: "Corinthia";
+        text-transform: uppercase;
+        font-family: consolas;
+        border-radius: 50px;
+        /* justify-content: center;
+        align-items: center; */
+        max-width: 475px;
+        color: #255784;
+    }
+</style>
+</head>
+<body>
+<h1 align="center"> CCRC ADMISSION FORM</h1>
+<section>
+    <hr>
+Personal Info:
+<fieldset>
+<form>
+    <a href="https://www.facebook.com/profile.php?id=100063712182245" target="new">
+    <img align="right" src="https://media.istockphoto.com/vectors/male-user-icon-vector-id517998264?k=20&m=517998264&s=612x612&w=0&h=pdEwtkJlZsIoYBVeO2Bo4jJN6lxOuifgjaH8uMIaHTU="></a>
+<p><label for="name">NAME: </label>
+<input type="text" class="abcxyz" name="name" required><br>
+<label for="add">ADRESS:</label>
+<input type="text" name="add" class="abcxyz" required><br>
+<label for="dob">DOB:</label>
+<input type="date" class="abcxyz" name="dob" required><br>
+<!-- <label for="gender">SEX:</label> -->
+SEX:<input type="radio" name="gender"> MALE
+<input type="radio" name="gender"> FEMALE
+<input type="radio" name="gender"> OTHERS <br>
+<label for="fat">FATHER'S NAME:</label>
+<input type="text" class="abcxyz" required><br></p>
+</fieldset><br>
+Education Info:
+<fieldset>
+    <legend align="center"><b><u>SEE/SLC</u></b></legend>
+   <p><label class="lab" for="school">SCHOOL'S NAME: 
+    <input size="59" type="text" class="abcxyz" name="school" required><br>
+    <label class="la" for="aa_choice">RESULT:</label>
+    <input size="13" class="abcxyz" list="aa_types" name="aa_choice" id="aa">
+    <datalist id="aa_types">
+    <option value="Distinction">
+    <option value="First Division">
+    <option value="Second Division">
+    </datalist>
+    <label class="la" for="gpa">PER/GPA:</label>
+    <input size="2" type="text" class="abcxyz" name="gpa"><br>
+    <label class="lab" for="file">FILE:</label>
+    <input type="file" class="abcxyz" name="file"><br></p>
+</fieldset>
+<div class="container">
+    <input type="submit" value="submit" name="submit" id="submit">
+</div>
+</form><br>
+<hr>
+</section>
+</body>
+</html>
