@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="icon-black.png">
+        <link href="Main.css" rel="stylesheet" type="text/css">
+        <link href="Mmain.css" rel="stylesheet" type="text/css">
+        <script src="Main.js" type="text/javascript"></script>
+        <title>Abhishek</title>
+    </head>
+    <body>
+        <nav>
+            <img src="Logo.png" alt="Logo" class="logo">
+            <ul class="but">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Services
+                    <ul>
+                        <li class="hov">Live Chat</li>
+                    </ul>
+                </li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li id="selected">Feedback</li></a>
+            </ul>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="box">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" id="id-name" onkeyup="validatename()">
+                    <span id="name-error"></span>
+                </div>
+        
+                <div class="box">
+                    <label>Phone No</label>
+                    <input type="tel" placeholder="98 0000 0000" id="id-phone" onkeyup="validatephone()">
+                    <span id="phone-error"></span>
+                </div>
+        
+                <div class="box">
+                    <label>E-mail Id</label>
+                    <input type="email" placeholder="Enter Email" id="id-email" onkeyup="validateemail()">
+                    <span id="email-error"></span>
+                </div>   
+        
+                <div class="box">
+                    <label>Your Message</label>
+                    <textarea rows="5" placeholder="Enter your message" id="id-message" onkeyup="validatemessage()"></textarea>
+                    <span id="message-error"></span>
+                </div>
+        
+                <abbr title="Try to Check Your Information Before You Submit">
+                    <input type="submit" value="Send" class="submit" onclick="return validateform()">
+                </abbr>
+                    <span id="submit-error"></span>
+            </form>
+        </div>
+             <script src="Main.js" type="text/javascript"></script>
+    </body>
+</html>

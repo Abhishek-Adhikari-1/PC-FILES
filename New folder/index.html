@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page - CCRC Team</title>
+    <link rel="icon" href="assets/cropped-ccrc-logo.webp">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <script type="text/javascript" src="javascript/index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+</head>
+<body>
+    <div class="body-container">
+        <script type="text/javascript" src="javascript/index.js"></script>
+    <div id="home_page">
+        <nav>
+            <image class="logo" src="assets/cropped-ccrc-logo.webp" alt="This is Colllege Logo"/>
+            <i class="fa-sharp fa-solid fa-bars" id="open" onclick="showMenu()"></i>
+            <ul id="ull">
+                <i class="fa-solid fa-xmark" id="close" onclick=hideMenu()></i>
+                <li id="li1"><a href="#home_page">home</a></li>
+                <li id="li2"><a href="#education_page">education</a></li>
+                <li id="li3"><a href="#achiev_page">Achivement</a></li>
+                <li id="li4"><a href="#add_page">Admission</a></li>
+                <li id="li5"><a href="#about_page">About</a></li>
+            </ul>
+        </nav>
+        <h1>Capital College & Research Center</h1>
+        <h2></h2>
+        <p>The Capital College and Research Centre (CCRC) is a Nepali
+            higher secondary school located in Balkumari, Kathmandu.
+            CCRC was established in 2001 A.D. with a view to aid in
+            the field of education. Since, then the school has been
+            able to produce excellent results in both graduate and
+            undergraduate levels. The school has also gained popularity
+            in the field of sports. It has produced a brilliant cricket
+            team. Also, basketball has aided more to its sports success.
+            CCRC has criteria by which it selects its teachers. Only the
+            teachers that can fulfill these criteria can join the college.</p>
+    </div>
+    <div id="education_page">
+        <style>
+
+            #content h2{
+                font-size: 35px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: orange;
+            }
+            #content p{
+                font-family: sans-serif;
+                color: white;
+                font-size: 25px;
+            }
+            #content b{
+                font-size: 30px;
+                font-family: monospace;
+                color: #009866;
+                animation: animate 5s linear infinite;
+            }
+            @keyframes animate{
+                100%,0%{
+                    filter: hue-rotate(0deg);
+                }
+                0%{
+                    filter: hue-rotate(360deg);
+                }
+            }
+            .abc{
+                text-align: center;
+            }
+            #about h2{
+                font-size: 35px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #about{
+            background:linear-gradient(to top, #009866, #008698);
+            display: flex;
+            /* border-radius: 20px; */
+            }
+        
+            #about h2{
+                color:black;
+            }
+            #about img{
+                max-height: 300px;
+                margin:  0 0 0 80px;
+            }
+        </style>
+        <div id="content">
+                    
+           <div class="abc"><b>Management – NEB (+2)</b><br><br></div>
+           <p>Plus two in management course is designed to develop a strong foundation on management studies. The faculty offers courses designed to deliver both theoretical foundation and practical knowledge and skills in Accounting, Business Management, Business Administration, Hotel Management, Travel and Tourism Management. Students learn to become competent, confident and academically sound in their area of study and will therefore have the benefit of deciding, at the end of course, what aspects of business management studies would interest them at Bachelor’s level programs.</p><br><br>
+           <div class="abc"><b>Humanities – NEB (+2)</b></div><br><br>
+           <p>Plus two in Humanities offers strong foundation level courses in various majors. It is for those students who want to pursue their Bachelor’s degree on different majors such as English, Nepali, Mathematics, Mass Communication, Sociology, Fine Arts, Music, History, Culture, Geography and other related fields of interest.</p><br><br>
+           <div class="abc"><b>Law – NEB (+2)</div></b><br><br>
+           <p>Plus two in Law is comparatively new but highly demanded stream in Nepal offering an integrated knowledge in English, Nepali, Social Studies and other core subjects of legal discipline like Constitutional Law, Civil Law, Criminal Law, Human Rights Law, etc. This program is for those students aspiring to become lawyers or prominent social scientist inside and outside the country. The program aims at preparing strong base of future lawyers to address the crisis in sector of law and justice.
+        
+           After studying +2 law, students will be able to understand the dynamics of law and justice, also enabling them to choose right career path among various programs of Bachelors of Law. Even if the students decide to drop studying law in university, they can be outstandingly smart learners in any other subjects of social science and very importantly, a good law-abiding citizen.</p>
+           </div>
+         </div><br><br><br>
+         </div>
+        </div>
+    </div>
+    <!-- <div id="achiev_page"></div> -->
+    <div id="add_page">
+        <div class="just">
+        <form>
+            <div class="box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" id="id-name" onkeyup="return validatename()">
+                <span id="name-error"></span>
+            </div>
+    
+            <div class="box">
+                <label>Phone No</label>
+                <input type="tel" placeholder="98 0000 0000" id="id-phone" onkeyup="return validatephone()">
+                <span id="phone-error"></span>
+            </div>
+    
+            <div class="box">
+                <label>E-mail Id</label>
+                <input type="email" placeholder="Enter Email" id="id-email" onkeyup="return validateemail()">
+                <span id="email-error"></span>
+            </div>   
+    
+            <div class="box">
+                <label>Your Message</label>
+                <textarea rows="5" placeholder="Enter your message" id="id-message" onkeyup="return validatemessage()"></textarea>
+                <span id="message-error"></span>
+            </div>
+    
+            <div class="fendiv"><button type="submit" onclick="return validateform()"><span class="sp1"></span>Send</button></div>
+            <span id="submit-error"></span>
+            <script type="text/javascript" src="javascript/index.js"></script>
+        </div>
+        </form>
+    </div>
+    <div id="about_page">
+    <div id="about"><img src="/assets/cropped-ccrc-logo.webp"/>
+        <p>Contact Us<br>
+        GPO Box 9737, Koteshwor (Near Balkumari Bridge), Kathmandu<br>
+        Tel.: 5100423, 5100456,<br>
+        Fax: 5100781<br>
+        E-mail: info@ccrc.edu.np,<br> 
+        Website: ccrc.edu.np<br></p>  
+     </div></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,220 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --header-height: 3rem;
+  
+  /*========== Colors ==========*/
+  --color-picker: 20;
+
+  /* HSL color mode */
+  --first-color: hsl(var(--color-picker), 69%, 61%);
+  --first-color-second: hsl(var(--color-picker), 69%, 61%);
+  --first-color-alt: hsl(var(--color-picker), 57%, 53%);
+  --first-color-lighter: hsl(var(--color-picker), 92%, 85%);
+  --svg-color: hsl(var(--color-picker), 81%, 59%);
+  --title-color: hsl(var(--color-picker), 8%, 15%);
+  --text-color: hsl(var(--color-picker), 8%, 45%);
+  --text-color-light: hsl(var(--color-picker), 8%, 65%);
+  --input-color: hsl(var(--color-picker), 70%, 93%);
+  --body-color: hsl(var(--color-picker), 60%, 99%);
+  --scroll-bar-color: hsl(var(--color-picker), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--color-picker), 12%, 70%);
+  --scroll-thumb-color-border: hsl(var(--color-picker), 12%, 40%);
+  --scroll-thumb-color-hover: hsl(var(--color-picker), 8%, 60%);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --qualification-font: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/*==================== USABLE CSS TAGS ====================*/
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+.p {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #101010;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+    padding: 2rem 0 4rem;
+}
+
+.section_title {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+}
+
+.section_subtitle {
+    display: block;
+    text-align: center;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+/*==================== NAV =====================*/
+.nav{
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_name, .nav_toggle{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav_toggle{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.nav_toggle:hover{
+    color: var(--first-color);
+}
+
+@media screen and (max-width: 768px) {
+    .nav_menu{
+        position: fixed;
+        bottom: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem 0;
+        box-shadow: 0 -1px 8px rgba(8, 7, 7,0.35);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: 0.4s;
+    }
+    .show_menu{
+        bottom: 0;
+    }
+}
+.nav_list{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.nav_link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: var(--normal-font-size);
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+    }
+    .hover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3px 6px;
+        border-radius: 10px;
+    }
+    .hover:hover{
+        color: var(--first-color);
+    }
+    .nav_icon {
+        font-size: 1.4rem;
+    }
+    .nav_close {
+        position: absolute;
+        right: 1.3rem;
+        bottom: 0.5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--first-color);
+    }
+    .nav_close:hover {
+        color: var(--first-color-alt);
+    }

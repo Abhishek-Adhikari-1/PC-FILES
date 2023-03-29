@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page review - CCRC</title>
+        <link rel="icon" href="cropped-ccrc-logo.webp">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script type="text/javascript" src="index.js"></script>
+        <div id="home_page">
+            <header class="headerbar">
+                <image src="cropped-ccrc-logo.webp" alt="This is Logo" class="headerimg"/>
+                <i class="fa-solid fa-bars" id="open" onclick="showMenu()"></i>
+                <ul class="headlinks">
+                    <i class="fa-solid fa-xmark" id="close" onclick="hideMenu()"></i>
+                    <li id="li1"><a href="#home_page">home</a></li>
+                    <li id="li2"><a href="#featured_page">featured</a></li>
+                    <li id="li3"><a href="#gallery_page">gallery</a></li>
+                    <li id="li4"><a href="#review_page">review</a></li>
+                    <li id="li5"><a href="#review_page">about</a></li>
+                </ul>
+            </header>
+            <div id="scrollpath"></div>
+            <div id="progressbar"></div>
+            <p class="homepar">
+                <p1>
+                    Experiences
+                </p1><br>
+                <p2>Of <abbr title="Click here to navigate to Capital College & Research Center"><a id="a1" target="_blank" href="https://www.google.com/maps/dir/''/Nawa+Prabhat+Marga,+%E0%A4%95%E0%A4%BE%E0%A4%A0%E0%A4%AE%E0%A4%BE%E0%A4%A1%E0%A5%8C%E0%A4%81+44600/@27.6729843,85.3414366,17z/data=!3m1!4b1!4m11!4m10!1m3!2m2!1d85.3436342!2d27.6729913!1m5!1m1!1s0x39eb19efc6b9d8e3:0x6620b50bb761f1b3!2m2!1d85.3436215!2d27.6729679">
+                CCRC</a></abbr>
+                </p2><br>
+                <p3>
+                    The Capital College and Research Centre (CCRC) is a Nepali
+                    higher secondary school located in Balkumari, Kathmandu.
+                    CCRC was established in 2001 A.D. with a view to aid in
+                    the field of education. Since, then the school has been
+                    able to produce excellent results in both graduate and
+                    undergraduate levels. The school has also gained popularity
+                    in the field of sports. It has produced a brilliant cricket
+                    team. Also, basketball has aided more to its sports success.
+                    CCRC has criteria by which it selects its teachers. Only the
+                    teachers that can fulfill these criteria can join the college.
+                </p3>
+            </p>
+            <button type="submit" onclick="login()" id="but1"><span></span>Register Here</button>
+        </div>
+        <div id="featured_page"><div class="ddd"><h2>Academics</h2><br><br>
+            <p>CCRC offers grade 11 and 12 courses in science, humanities and management.<br><br><br>
+            <h2>Motto</h2><br><br>
+            <p>Our school's motto is Quest for knowledge with wisdom.</p><br><br>
+        <h1>Once CCRCIANS, Always CCRCIANS</h1></p></div></div>
+        <div id="gallery_page"><h1>Science</h1>
+            In Science Stream, the students are divided into two groups: Physical & Biology.<br><br>
+            <h1>Management – NEB (+2)</h1><br><br>
+            <p>Plus two in management course is designed to develop a strong foundation.<br><br>
+            <h1>Humanities – NEB (+2)</h1><br><br>
+            <p>Plus two in Humanities offers strong foundation level courses in various course.
+        </div>
+        <div id="review_page">
+            <div class="just">
+                <form>
+                    <script type="text/javascript" src="index.js"></script>
+                    <div class="box">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" id="id-name" onkeyup="return validatename()">
+                        <span id="name-error"></span>
+                    </div>
+            
+                    <div class="box">
+                        <label>Phone No</label>
+                        <input type="tel" placeholder="98 0000 0000" id="id-phone" onkeyup="return validatephone()">
+                        <span id="phone-error"></span>
+                    </div>
+            
+                    <div class="box">
+                        <label>E-mail Id</label>
+                        <input type="email" placeholder="Enter Email" id="id-email" onkeyup="return validateemail()">
+                        <span id="email-error"></span>
+                    </div>   
+            
+                    <div class="box">
+                        <label>Your Message</label>
+                        <textarea rows="5" placeholder="Enter your message" id="id-message" onkeyup="return validatemessage()"></textarea>
+                        <span id="message-error"></span>
+                    </div>
+            
+                    <div class="fendiv"><button type="submit" onclick="return validateform()" id="btn2"><span class="sp1"></span>Send</button></div>
+                    <span id="submit-error"></span>
+                    <script type="text/javascript" src="index.js"></script>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div id="#about_page">
+            <div id="about">
+                <div id="contentii">
+                <div id="list">
+                <ul>
+                <li>GPO Box 9737,Koteshwor(Near Balkumari Bridge),Kathmandu</li><br>
+                <li>Tel.: 5100423, 5100456,</li><br>
+                <li>Fax: 5100781</li><br>
+                <li>E-mail: info@ccrc.edu.np,</li><br> 
+                <li>Website: ccrc.edu.np</li><br>
+            </ul></div>
+             <div id="contacts">
+                <div id="cont">
+             <h2>Contact Links</h2>
+                <a href="#instagram"><img id="iimage" src="insta.png" alt="" width="50"></a>&nbsp;&nbsp;
+                <a href="#facebook"><img id="fimage"src="fb.png" alt="" width="50"></a>
+                
+            <span id="text"><h2><label for="iimage">Instagram</label>&nbsp; <label for="fimage">Facebook</label></h2></span></center>
+                </div>
+                </div>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>

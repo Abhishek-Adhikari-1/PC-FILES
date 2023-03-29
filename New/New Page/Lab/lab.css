@@ -1,0 +1,191 @@
+body{
+    background-color: rgb(20, 82, 53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b{
+    transform: translateY(-100px)translateX(-100px);
+}
+.shape{
+    position: fixed;
+}
+.shape:nth-child(1){
+    width: 200px;
+    height: 200px;
+    clip-path: circle(100px);
+    background: rgb(212, 236, 104);
+    top: -210px;
+    left: 20px;
+    /* transform: translateY(-210px)translateX(20px); */
+    animation: animate 7s linear infinite;
+}
+.shape:nth-child(2){
+    width: 160px;
+    height: 160px;
+    clip-path: circle(80px);
+    background: rgb(216, 72, 120);
+    top: 240px;
+    left: 400px;
+    /* transform: translateY(240px)translateX(400px); */
+    animation: animate 6s linear infinite;
+}
+.shape:nth-child(3){
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50px);
+    background: rgb(228, 50, 50);
+    top: 220px;
+    left: 70px;
+    /* transform: translateY(220px)translateX(70px); */
+    animation: animate 5s linear infinite;
+}
+.shape:nth-child(4){
+    width: 60px;
+    height: 60px;
+    clip-path: circle(30px);
+    background: rgb(50, 172, 228);
+    top: 40px;
+    left: 200px;
+    /* transform: translateY(40px)translateX(200px); */
+    animation: animate 4s linear infinite;
+}
+.shape:nth-child(5){
+    width: 120px;
+    height: 120px;
+    clip-path: circle(60px);
+    background: rgb(100, 228, 50);
+    top: -180px;
+    left: 450px;
+    /* transform: translateY(-180px)translateX(350px); */
+    animation: animate 4s linear infinite;
+}
+.shape:nth-child(6){
+    width: 40px;
+    height: 40px;
+    clip-path: circle(20px);
+    background: rgb(228, 166, 50);
+    top: 250px;
+    left: 330px;
+    /* transform: translateY(250px)translateX(330px); */
+    animation: animate 3s linear infinite;
+}
+.shape:nth-child(7){
+    width: 70px;
+    height: 70px;
+    clip-path: circle(35px);
+    background: rgb(178, 50, 228);
+    top: 130px;
+    left: 390px;
+    /* transform: translateY(130px)translateX(390px); */
+    animation: animate 10s linear infinite;
+
+}
+/* @keyframes animate{
+    0%,100%{
+        transform: translateY(10px);
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+} */
+.container{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.55);
+    border-radius: 15px;
+    color: rgb(196, 196, 196);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+form{
+    width: 85%;
+    font-size: 16px;
+}
+form *{
+    background: rgba(0, 0, 0, 0.3);
+}
+input{
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    height: 35px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding: 0 10px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    float: right;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    border: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+button:hover{
+    border: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+b{
+    background: transparent;
+}
+a{
+    background: transparent;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+h2{
+    background: transparent;
+    text-align: center
+}
+input[type="checkbox"]{
+    width: 14px;
+    cursor: pointer;
+}
+::placeholder{
+    color: rgb(255, 213, 213);
+}
+.uil{
+    position: absolute;
+    right: 40px;
+    top: 342px;
+    background: transparent;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+#p{
+    position: absolute;
+    background: transparent;
+    color: aliceblue;
+    font-size: 16px;
+    transform: translateY(9px);
+}
+label{
+    background: transparent;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}

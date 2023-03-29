@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page-Abhishek</title>
+        <link rel="icon" href="fb.png">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script type="text/javascript" src="index.js"></script>
+        <div id="home_page">
+            <header class="headerbar">
+                <image src="cropped-ccrc-logo.webp" alt="This is Logo" class="headerimg"/>
+                <i class="fa-solid fa-bars" id="open" onclick="showMenu()"></i>
+                <ul class="headlinks">
+                    <i class="fa-solid fa-xmark" id="close" onclick="hideMenu()"></i>
+                    <li id="li1"><a href="#home_page">home</a></li>
+                    <li id="li2"><a href="#featured_page">featured</a></li>
+                    <li id="li3"><a href="#gallery_page">gallery</a></li>
+                    <li id="li4"><a href="#review_page">review</a></li>
+                    <li id="li5"><a href="#review_page">about</a></li>
+                </ul>
+            </header>
+            <div id="scrollpath"></div>
+            <div id="progressbar"></div>
+            <p class="homepar">
+                <p1>
+                    Experiences
+                </p1><br>
+                <p2>
+                    Of NEPAL
+                </p2><br>
+                <p3>
+                    Nepal is a landlocked country in South Asia, between China and India. It is one of the most fasc
+                    inating countries in the world with its natural beauty, rich cultural heritage, towering pagodas, spectac
+                    ular Himalayan ranges with world’s highest peaks. It contains eight of the world’s 10 highest peaks, inclu
+                    ding Mt. Everest the world’s tallest. Nepal surrounded by the lofty heights of the Himalayas, is a land of eternal beauty and attraction. It
+                     is a land of colorful cultures, ancient history and people, picturesque scenery and some of the best walking trails on earth.
+                </p3>
+            </p>
+            <button type="submit" onclick="login()" id="but1"><span></span>Sign in</button>
+        </div>
+        <div id="featured_page"></div>
+        <div id="gallery_page"></div>
+        <div id="review_page">
+            <div class="just">
+                <form>
+                    <script type="text/javascript" src="index.js"></script>
+                    <div class="box">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" id="id-name" onkeyup="return validatename()">
+                        <span id="name-error"></span>
+                    </div>
+            
+                    <div class="box">
+                        <label>Phone No</label>
+                        <input type="tel" placeholder="98 0000 0000" id="id-phone" onkeyup="return validatephone()">
+                        <span id="phone-error"></span>
+                    </div>
+            
+                    <div class="box">
+                        <label>E-mail Id</label>
+                        <input type="email" placeholder="Enter Email" id="id-email" onkeyup="return validateemail()">
+                        <span id="email-error"></span>
+                    </div>   
+            
+                    <div class="box">
+                        <label>Your Message</label>
+                        <textarea rows="5" placeholder="Enter your message" id="id-message" onkeyup="return validatemessage()"></textarea>
+                        <span id="message-error"></span>
+                    </div>
+            
+                    <div class="fendiv"><button type="submit" onclick="return validateform()"><span class="sp1"></span>Send</button></div>
+                    <span id="submit-error"></span>
+                    <script type="text/javascript" src="index.js"></script>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div id="#about_page">
+            <div id="about">
+                <div id="contentii">
+                <div id="list">
+                <ul>
+                <li>GPO Box 9737,Koteshwor(Near Balkumari Bridge),Kathmandu</li><br>
+                <li>Tel.: 5100423, 5100456,</li><br>
+                <li>Fax: 5100781</li><br>
+                <li>E-mail: info@ccrc.edu.np,</li><br> 
+                <li>Website: ccrc.edu.np</li><br>
+            </ul></div>
+             <div id="contacts">
+                <div id="cont">
+             <h2>Contact Links</h2>
+                <a href="#instagram"><img id="iimage" src="insta.png" alt="" width="50"></a>&nbsp;&nbsp;
+                <a href="#facebook"><img id="fimage"src="fb.png" alt="" width="50"></a>
+                
+            <span id="text"><h2><label for="iimage">Instagram</label>&nbsp; <label for="fimage">Facebook</label></h2></span></center>
+                </div>
+                </div>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>

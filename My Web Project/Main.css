@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Nav bar start*/
+nav{
+    background-color: #0082e6;
+    height: 80px;
+    width: 100%;
+    cursor: default;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.logo{
+    max-height: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.but{
+    float: right;
+    margin: 20px;
+    display: flex;
+}
+li{
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 40px;
+    margin: 0px 8px;
+    padding: 0px 13px;
+    transition: .35s;
+}
+li:hover, #selected{
+    background-color: #FFFFFF;
+    color: #1b9bff;
+    border-radius: 8px;
+}
+.hov{
+    display: none;
+}
+.hov:hover{
+    display: block;
+}

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#home_page{
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    font-family: 'Kanit', sans-serif;
+}
+.logo{
+    max-width: 60px;
+    margin: 5px 0 0 15px;
+}
+ul{
+    float: right;
+    list-style: none;
+    display: flex;
+    padding: 0 10px 0 0;
+    font-family: sans-serif;
+    position: relative;
+}
+li{
+    margin: 13px 20px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+li::after{
+    content: '';
+    background-color: #009688;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    animation: animate 5s infinite linear;
+    transition: 1s;
+}
+li:hover::after{
+    width: 100%;
+}
+#open,#close{
+    color: #FFFFFF;
+    font-size: 25px;
+    display: none;
+}
+::selection{
+    background-color: #06809e7a;
+    color: rgb(37, 35, 35);
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+p{
+    color: white;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    padding: 0 10%;
+}
+h1{
+    color: rgb(224, 36, 36);
+    font-size: 50px;
+    text-align: center;
+}
+@media(max-width:732px){
+    ul{
+        display: block;
+        background: linear-gradient(to right, #00967dc7, #007396c7);
+        padding: 0 10% 0 10%;
+        margin: 3px 3px 0 0;
+    }
+    li{
+        padding: 10%;
+        text-align: center;
+
+    }
+    #close{
+        display: block;
+        margin: 0;
+        padding: 0;
+        transform: translateX(-80%)translateY(80%);
+        position: fixed;
+    }
+    #open{
+        display: block;
+        float: right;
+        margin: 0 0 0 90%;
+        position: absolute;
+        transform: translateY(-180%);
+    }
+}
+#add_page{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(rgba(4,9,30,0.75),rgba(0,0,0,0.7)),url(""); */
+    background: linear-gradient(to top, #c0c249, #009619);
+
+}
+form{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-width: 500px;
+    padding: 2% 10% 3% 10%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+.box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+    position: relative;
+}
+.box label{
+    flex-basis: 28%;
+}
+.box input, .box textarea{
+    flex-basis: 68%;
+    background-color: none;
+    border: 0;
+    outline: 0;
+    padding: 1% 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+}
+input::placeholder{
+    font-size: 14px;
+}
+.box input:focus, textarea:focus{
+    border-bottom: 1px solid rgb(4, 151, 78);
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: #009688;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+span.sp1{
+    background: #fff;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s;
+}
+button:hover{
+    color: #009688;
+}
+button:hover span{
+    width: 100%;
+}
+.fendiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box span{
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    right: 17px;
+    bottom: 12px;
+}
+#submit-error{
+    color: red;
+    padding: 0;
+}
+#name-error, #phone-error, #email-error, #message-error{
+    padding: 0 1px 0 0;
+}
+.box span i{
+    color: seagreen;
+}
+.just{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 20% 0;
+    padding:10% 0 0 0;
+}
+#education_page{
+    width: 100%;
+    height: 100%;
+}
+#achiev_page{
+    width: 100%;
+    height: 100vh;
+}
+
+.body-container {
+    background: linear-gradient(rgba(4,9,30,0.75),rgba(0,0,0,0.7)),url("assets/CCRC.jpg")
+}
+@media(max-width:732px){
+    #about_page{
+        width: fit-content;
+    }
+}
